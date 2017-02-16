@@ -24,10 +24,10 @@ MainGame.prototype =
 
 	preload: function() 
 	{
-		game.load.image("Player", "https://github.com/MCDark77/Game/tree/master/img/Player.png");
-		game.load.tilemap('test', 'https://github.com/MCDark77/Game/tree/master/Map/test.json', null, Phaser.Tilemap.TILED_JSON);
-		game.load.image('dirt', 'https://github.com/MCDark77/Game/tree/master/Map/Textures/Dirt.png');
-		game.load.spritesheet('spl', 'https://github.com/MCDark77/Game/tree/master/img/spritesheet/Player.png.png', 64, 64, 8);
+		game.load.image("Player", "http://192.168.178.43:7799/img/Player.png");
+		game.load.tilemap('test', 'http://192.168.178.43:7799/Map/test.json', null, Phaser.Tilemap.TILED_JSON);
+		game.load.image('dirt', 'http://192.168.178.43:7799/Map/Textures/Dirt.png');
+		game.load.spritesheet('spl', 'http://192.168.178.43:7799/img/spritesheet/Player.png.png', 64, 64, 8);
 	},
 	
 		
@@ -82,6 +82,8 @@ MainGame.prototype =
 	 	if(this.btnLEFT.isDown || this.LEFTbtn.isDown) this.player.x = this.player.x - 2,5 && this.player.animations.play("idle_backward");  
 		if(this.btnRIGHT.isDown || this.RIGHTbtn.isDown) this.player.x = this.player.x + 2,5; 
 		if(this.btns_r.isUp && this.btns_l.isUp) this.player.animations.play("idle_forward"); else if(this.RIGHTbtn.isDown || this.btnRIGHT.isDown) this.player.animations.play("forward", 12, true); else if(this.LEFTbtn.isDown || this.btnLEFT.isDown) this.player.animations.play("backward", 12, true);
+		//if(this.btnLEFT.isUp && this.LEFTbtn.isUp) this.player.animations.play("idle_forward"); else if(this.btnLEFT.isDown || this.LEFTbtn.isDown) this.player.animations.play('backward', 12, true);
+		//if(this.btnRIGHT.isUp && this.RIGHTbtn.isUp) this.player.animations.play("idle_forward"); else if(this.btnRIGHT.isDown || this.RIGHTbtn.isDown) this.player.animations.play('backward', 12, true)
 		
 	},
 

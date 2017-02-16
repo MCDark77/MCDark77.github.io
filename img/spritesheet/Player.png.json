@@ -1,0 +1,28 @@
+{"frames": [
+
+{
+	"filename": "Player_walk_backward.png",
+	"frame": {"x":0,"y":0,"w":64,"h":256},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":64,"h":256},
+	"sourceSize": {"w":64,"h":256}
+},
+{
+	"filename": "Player_walk_foward.png",
+	"frame": {"x":0,"y":256,"w":64,"h":256},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":64,"h":256},
+	"sourceSize": {"w":64,"h":256}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "Player.png.png",
+	"format": "RGBA8888",
+	"size": {"w":64,"h":512},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:5ac59f4c06874f8d3b5ab849bd0cf267:aa02ffb4348af3b8456ccc0439086065:7bdc740644b34f4ecd52a0d2a9f09b2e$"
+}
+}
